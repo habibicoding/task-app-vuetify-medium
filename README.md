@@ -1,5 +1,9 @@
 # Task App Vuetify 3 medium.com Tutorial
 
+## Full Tutorial
+
+Link to medium.com article [medium.com](https://medium.com/@habibicoding).
+
 ## Project setup
 
 ```
@@ -46,11 +50,12 @@ pnpm test:coverage
 
 See [Configuration Reference](https://vitejs.dev/config/).
 
-
-
 ## 💪 Support Vuetify Development
 
-This project is built with [Vuetify](https://vuetifyjs.com/en/), a UI Library with a comprehensive collection of Vue components. Vuetify is an MIT licensed Open Source project that has been made possible due to the generous contributions by our [sponsors and backers](https://vuetifyjs.com/introduction/sponsors-and-backers/). If you are interested in supporting this project, please consider:
+This project is built with [Vuetify](https://vuetifyjs.com/en/), a UI Library with a comprehensive collection of Vue
+components. Vuetify is an MIT licensed Open Source project that has been made possible due to the generous contributions
+by our [sponsors and backers](https://vuetifyjs.com/introduction/sponsors-and-backers/). If you are interested in
+supporting this project, please consider:
 
 - [Requesting Enterprise Support](https://support.vuetifyjs.com/)
 - [Sponsoring John on Github](https://github.com/users/johnleider/sponsorship)
@@ -61,6 +66,7 @@ This project is built with [Vuetify](https://vuetifyjs.com/en/), a UI Library wi
 - [Making a one-time donation with Paypal](https://paypal.me/vuetify)
 
 ## 📑 License
+
 [MIT](http://opensource.org/licenses/MIT)
 
 Copyright (c) 2016-present Vuetify, LLC
