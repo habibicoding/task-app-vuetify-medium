@@ -1,9 +1,3 @@
-/**
- * router/index.ts
- *
- * Automatic routes for `./src/pages/*.vue`
- */
-
 // Composables
 import {createRouter, createWebHistory} from 'vue-router'
 
