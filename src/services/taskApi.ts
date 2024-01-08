@@ -4,7 +4,7 @@ import {HTTP_STATUS} from "@/constants/appConstants";
 import {TaskCreateRequest, TaskUpdateRequest} from "@/dtos/taskDto";
 
 
-const baseURL = 'https://backend4frontend-dnfm.onrender.com/api/v1/';
+const baseURL = 'https://backend4frontend.onrender.com/api/v1/tasks/api/v1/';
 const api: AxiosInstance = axios.create({baseURL});
 
 api.interceptors.response.use(
