@@ -6,6 +6,11 @@ import {TASK_DETAIL_VIEW, TASK_UPDATE_VIEW} from "@/constants/appConstants";
 import {TaskFetchResponse} from "@/dtos/taskDto";
 import {useTaskNavigation} from "@/composables/useTaskNavigation";
 import {useTaskStore} from "@/store/taskStore";
+import MainBackground from "@/components/MainBackground.vue";
+import Navbar from "@/components/Navbar.vue";
+import LoadingSpinner from "@/components/LoadingSpinner.vue";
+import ErrorDialog from "@/components/ErrorDialog.vue";
+import TaskCard from "@/components/TaskCard.vue";
 
 
 const {fetchTasks, tasks, isLoading, isNetworkError, axiosError} = getTasks();
@@ -50,11 +55,16 @@ const deleteTask = (id: number) => {
 
 </script>
 
-
 <template>
-
+  <Navbar @task-type-selected="handleTaskTypeSelected" @logo-clicked="logoClicked"/>
+  <MainBackground>
+    <ErrorDialog :model-value="isNetworkError" :axios-error="axiosError"/>
+    <TaskCard
+      :tasks="tasks"
+      @card-clicked="handleCardClicked"
+      @delete-clicked="openDeleteDialog"
+      @edit-clicked="navigateToTaskUpdateView"
+    />
+    <LoadingSpinner :is-loading="isLoading"/>
+  </MainBackground>
 </template>
-
-<style scoped>
-
-</style>
