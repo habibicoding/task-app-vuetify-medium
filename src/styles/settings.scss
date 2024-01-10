@@ -1,10 +1,60 @@
-/**
- * src/styles/settings.scss
- *
- * Configures SASS variables and Vuetify overwrites
- */
+.v-sheet-padding {
+  padding: 0.65rem;
+}
 
-// https://vuetifyjs.com/features/sass-variables/`
-// @use 'vuetify/settings' with (
-//   $color-pack: false
-// );
+.v-card-bg {
+  background-color: #EEEEEE;
+  margin: 0.85rem;
+}
+
+.nice-looking-card {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #f8f9fa;
+  padding: 20px;
+  overflow: hidden; /* Ensures the border-radius clips content */
+}
+
+.center-text {
+  text-align: center;
+}
+
+.v-card-bg {
+  background-color: #f5f5f5; /* Light background */
+  color: #333; /* Darker text for contrast */
+}
+
+.v-card-actions {
+  border-top: 1px solid #ddd; /* Subtle line to separate actions */
+  padding-top: 10px;
+}
+
+.v-btn {
+  text-transform: none; /* Avoid uppercase text */
+}
+
+.mdi {
+  font-size: 1rem; /* Adjust this value to increase or decrease the icon size */
+}
+
+.v-btn.clear-btn {
+  width: 49%;
+  background-color: red;
+  color: #EEEEEE;
+  margin: 0 0.2rem;
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+.v-btn.submit-btn {
+  width: 49%;
+  background-color: green;
+  color: #EEEEEE;
+  margin: 0 0.2rem;
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+}
