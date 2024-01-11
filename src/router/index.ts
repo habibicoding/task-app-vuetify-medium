@@ -1,7 +1,8 @@
 // Composables
 import {createRouter, createWebHistory} from 'vue-router'
-import Tasks from "@/pages/TasksOverviewPage.vue";
-import {HOME_VIEW} from "@/constants/appConstants";
+import {HOME_VIEW, TASK_CREATE_VIEW} from "@/constants/appConstants";
+import TaskCreatePage from "@/pages/TaskCreatePage.vue";
+import TasksOverviewPage from "@/pages/TasksOverviewPage.vue";
 
 
 const routes = [
@@ -12,9 +13,15 @@ const routes = [
       {
         path: "",
         name: HOME_VIEW,
-        component: Tasks,
+        component: TasksOverviewPage,
         props: true
       },
+      {
+        path: 'new-task',
+        name: TASK_CREATE_VIEW,
+        component: TaskCreatePage,
+        props: true
+      }
     ],
   }
 ]
