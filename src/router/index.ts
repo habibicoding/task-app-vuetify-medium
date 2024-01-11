@@ -1,6 +1,6 @@
 // Composables
 import {createRouter, createWebHistory} from 'vue-router'
-import Tasks from "@/pages/Tasks.vue";
+import Tasks from "@/pages/TasksOverviewPage.vue";
 import {HOME_VIEW} from "@/constants/appConstants";
 
 
