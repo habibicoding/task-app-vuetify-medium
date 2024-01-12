@@ -8,7 +8,7 @@ import MainBackground from "@/components/MainBackground.vue";
 import LoadingSpinner from "@/components/LoadingSpinner.vue";
 import ErrorDialog from "@/components/ErrorDialog.vue";
 import Navbar from "@/components/Navbar.vue";
-import TaskCreateCard from "@/components/TaskCreateCard.vue";
+import TaskCreateCard from "@/components/TaskCreateForm.vue";
 
 
 const {handleTaskTypeSelected, logoClicked, navigateToTasksView} = useTaskNavigation();
