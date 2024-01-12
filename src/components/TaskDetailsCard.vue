@@ -65,6 +65,7 @@ const handleBackClick = () => {
     </v-list>
   </v-card>
 
+  <br />
   <v-btn block class="clear-btn" @click="handleBackClick">back</v-btn>
 
 </template>
