@@ -7,6 +7,12 @@ defineProps({
   task: Object as PropType<TaskFetchResponse>
 });
 
+const emit = defineEmits(['back-clicked']);
+
+const handleBackClick = () => {
+  emit('back-clicked');
+};
+
 </script>
 
 <template>
@@ -58,6 +64,8 @@ defineProps({
 
     </v-list>
   </v-card>
+
+  <v-btn block class="clear-btn" @click="handleBackClick">back</v-btn>
 
 </template>
 
