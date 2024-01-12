@@ -10,7 +10,7 @@ import MainBackground from "@/components/MainBackground.vue";
 import Navbar from "@/components/Navbar.vue";
 import LoadingSpinner from "@/components/LoadingSpinner.vue";
 import ErrorDialog from "@/components/ErrorDialog.vue";
-import TaskCard from "@/components/TaskCard.vue";
+import TaskCard from "@/components/TaskOverviewCard.vue";
 
 
 const {fetchTasks, tasks, isLoading, isNetworkError, axiosError} = getTasks();
