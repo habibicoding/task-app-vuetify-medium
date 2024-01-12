@@ -6,6 +6,8 @@ import {TaskFetchResponse} from "@/dtos/taskDto";
 import Navbar from "@/components/Navbar.vue";
 import MainBackground from "@/components/MainBackground.vue";
 import TaskDetailsCard from "@/components/TaskDetailsCard.vue";
+import router from "@/router";
+
 
 defineProps({
   id: String
@@ -29,12 +31,16 @@ function showTaskDetails() {
   Object.assign(task, taskStore.taskToEdit);
 }
 
+const clickedBackButton = () => {
+  router.back();
+};
+
 </script>
 
 
 <template>
   <Navbar @task-type-selected="handleTaskTypeSelected" @logo-clicked="logoClicked"/>
   <MainBackground>
-    <TaskDetailsCard :task="task"/>
+    <TaskDetailsCard :task="task" @back-clicked="clickedBackButton"/>
   </MainBackground>
 </template>
