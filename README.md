@@ -1,8 +1,14 @@
-# Task App Vuetify 3 medium.com Tutorial
+# Task App Vuetify 3 YouTube Tutorial
 
 ## Full Tutorial
 
-Link to medium.com article [medium.com](https://medium.com/@habibicoding).
+Link to YouTube
+channel [Vuetify 3 TypeScript Tutorial Series](https://www.youtube.com/watch?v=YajNE5-gg1E&list=PLjuEK3Ez60n3-ys_uT3ps14kS9k6nkAiw).
+
+## Written tutorial on Medium
+
+Link to
+medium.com [Vuetify 3 TypeScript Tutorial Series](https://medium.com/nerd-for-tech/vuetify-3-typescript-tutorial-series-part-1-e6504cd460c6).
 
 ## Project setup
 
